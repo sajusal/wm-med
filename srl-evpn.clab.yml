@@ -47,9 +47,6 @@ topology:
       kind: linux
       mgmt-ipv4: 172.20.20.11
       mgmt-ipv6: 2001:172:20:20::11
-      binds:
-        - ./configs/hosts/client2/interfaces:/etc/network/interfaces
-        - ./configs/hosts/client2/staticroute:/etc/conf.d/staticroute
       exec:
         - /root/restart-services.sh
         - ip route add 172.16.10.0/24 via 10.80.1.2
@@ -58,9 +55,6 @@ topology:
       kind: linux
       mgmt-ipv4: 172.20.20.12
       mgmt-ipv6: 2001:172:20:20::12
-      binds:
-        - ./configs/hosts/client3/interfaces:/etc/network/interfaces
-        - ./configs/hosts/client3/staticroute:/etc/conf.d/staticroute        
       exec:
         - /root/restart-services.sh
         - ip -6 route add 10:90:1::/64 via 172:16:10::253
@@ -69,9 +63,6 @@ topology:
       kind: linux
       mgmt-ipv4: 172.20.20.13
       mgmt-ipv6: 2001:172:20:20::13
-      binds:
-        - ./configs/hosts/client4/interfaces:/etc/network/interfaces
-        - ./configs/hosts/client4/staticroute:/etc/conf.d/staticroute
       exec:
         - /root/restart-services.sh
         - ip route add 172.16.10.0/24 via 10.90.1.2

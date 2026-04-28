@@ -12,4 +12,4 @@
 ---
 
 
-![image](topo.jpg)
+![image](topo-med.png)

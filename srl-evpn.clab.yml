@@ -15,19 +15,19 @@ topology:
       image: ghcr.io/nokia/srlinux:26.3.1
   nodes:
     leaf1:
-      #startup-config: configs/leaf1.cfg
+      startup-config: configs/leaf1.cfg
       mgmt-ipv4: 172.20.20.2
       mgmt-ipv6: 2001:172:20:20::2
     leaf1-1:
       mgmt-ipv4: 172.20.20.5
       mgmt-ipv6: 2001:172:20:20::5
-      #startup-config: configs/leaf1-1.cfg
+      startup-config: configs/leaf1-1.cfg
     leaf1-2:
       mgmt-ipv4: 172.20.20.6
       mgmt-ipv6: 2001:172:20:20::6
-      #startup-config: configs/leaf1-1.cfg
+      startup-config: configs/leaf1-2.cfg
     spine:
-      #startup-config: configs/spine.cfg
+      startup-config: configs/spine.cfg
       mgmt-ipv4: 172.20.20.3
       mgmt-ipv6: 2001:172:20:20::3
   links:
